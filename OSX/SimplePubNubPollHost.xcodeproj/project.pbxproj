@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7917D7A91BFB57C400CB426B /* SPNPPollDataVerificator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917D7A81BFB57C400CB426B /* SPNPPollDataVerificator.m */; };
+		797149491BF02AEA00F9FC61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 797149481BF02AEA00F9FC61 /* main.m */; };
+		79A78CEA1BF02C4F000B3BAD /* SPNPApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A78CDA1BF02C4F000B3BAD /* SPNPApplicationDelegate.m */; };
+		79A78CEB1BF02C4F000B3BAD /* SPNPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A78CDC1BF02C4F000B3BAD /* SPNPMainViewController.m */; };
+		79A78CED1BF02C4F000B3BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A78CE61BF02C4F000B3BAD /* Assets.xcassets */; };
+		79A78CEE1BF02C4F000B3BAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A78CE81BF02C4F000B3BAD /* Main.storyboard */; };
+		79A78CF11BF02CFF000B3BAD /* SPNPPollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A78CF01BF02CFF000B3BAD /* SPNPPollManager.m */; };
+		79AB5FB91C00943F00D76A3C /* SPNPPollResponseStatistic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AB5FB81C00943F00D76A3C /* SPNPPollResponseStatistic.m */; };
+		79AB5FBC1C01304900D76A3C /* SPNPPollStatistic.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AB5FBB1C01304900D76A3C /* SPNPPollStatistic.m */; };
+		79F6BB451BFD33B7000B3C5B /* SPNPSerializable.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6BB441BFD33B7000B3C5B /* SPNPSerializable.m */; };
+		79F6BB4B1BFD33E7000B3C5B /* SPNPPoll.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6BB481BFD33E7000B3C5B /* SPNPPoll.m */; };
+		79F6BB4C1BFD33E7000B3C5B /* SPNPPollResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6BB4A1BFD33E7000B3C5B /* SPNPPollResponse.m */; };
+		79F6BB4F1BFF2D8C000B3C5B /* SPNPPollSessionRestoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F6BB4E1BFF2D8C000B3C5B /* SPNPPollSessionRestoreViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		598C8B5F3CAAF1472447836E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7917D7A71BFB57C400CB426B /* SPNPPollDataVerificator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNPPollDataVerificator.h; sourceTree = "<group>"; };
+		7917D7A81BFB57C400CB426B /* SPNPPollDataVerificator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNPPollDataVerificator.m; sourceTree = "<group>"; };
+		797149411BF02AEA00F9FC61 /* SimplePubNubPollHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePubNubPollHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		797149481BF02AEA00F9FC61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79A78CD91BF02C4F000B3BAD /* SPNPApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNPApplicationDelegate.h; sourceTree = "<group>"; };
+		79A78CDA1BF02C4F000B3BAD /* SPNPApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNPApplicationDelegate.m; sourceTree = "<group>"; };
+		79A78CDB1BF02C4F000B3BAD /* SPNPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNPMainViewController.h; sourceTree = "<group>"; };
+		79A78CDC1BF02C4F000B3BAD /* SPNPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNPMainViewController.m; sourceTree = "<group>"; };
+		79A78CE41BF02C4F000B3BAD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79A78CE61BF02C4F000B3BAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79A78CE91BF02C4F000B3BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79A78CEF1BF02CFF000B3BAD /* SPNPPollManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNPPollManager.h; sourceTree = "<group>"; };
+		79A78CF01BF02CFF000B3BAD /* SPNPPollManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNPPollManager.m; sourceTree = "<group>"; };
+		79AB5FB71C00943F00D76A3C /* SPNPPollResponseStatistic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNPPollResponseStatistic.h; sourceTree = "<group>"; };
+		79AB5FB81C00943F00D76A3C /* SPNPPollResponseStatistic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNPPollResponseStatistic.m; sourceTree = "<group>"; };
+		79AB5FBA1C01304900D76A3C /* SPNPPollStatistic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNPPollStatistic.h; sourceTree = "<group>"; };
+		79AB5FBB1C01304900D76A3C /* SPNPPollStatistic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNPPollStatistic.m; sourceTree = "<group>"; };
+		79F6BB431BFD33B7000B3C5B /* SPNPSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNPSerializable.h; sourceTree = "<group>"; };
+		79F6BB441BFD33B7000B3C5B /* SPNPSerializable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNPSerializable.m; sourceTree = "<group>"; };
+		79F6BB471BFD33E7000B3C5B /* SPNPPoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNPPoll.h; sourceTree = "<group>"; };
+		79F6BB481BFD33E7000B3C5B /* SPNPPoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNPPoll.m; sourceTree = "<group>"; };
+		79F6BB491BFD33E7000B3C5B /* SPNPPollResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNPPollResponse.h; sourceTree = "<group>"; };
+		79F6BB4A1BFD33E7000B3C5B /* SPNPPollResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNPPollResponse.m; sourceTree = "<group>"; };
+		79F6BB4D1BFF2D8C000B3C5B /* SPNPPollSessionRestoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNPPollSessionRestoreViewController.h; sourceTree = "<group>"; };
+		79F6BB4E1BFF2D8C000B3C5B /* SPNPPollSessionRestoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNPPollSessionRestoreViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7971493E1BF02AEA00F9FC61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7753413BD9EF7F38AB834D0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				598C8B5F3CAAF1472447836E /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		797149381BF02AEA00F9FC61 = {
+			isa = PBXGroup;
+			children = (
+				797149431BF02AEA00F9FC61 /* SimplePubNubPoll */,
+				797149421BF02AEA00F9FC61 /* Products */,
+				7753413BD9EF7F38AB834D0E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		797149421BF02AEA00F9FC61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				797149411BF02AEA00F9FC61 /* SimplePubNubPollHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		797149431BF02AEA00F9FC61 /* SimplePubNubPoll */ = {
+			isa = PBXGroup;
+			children = (
+				79A78CD71BF02C4F000B3BAD /* Classes */,
+				79A78CE21BF02C4F000B3BAD /* Resources */,
+				797149471BF02AEA00F9FC61 /* Supporting Files */,
+			);
+			path = SimplePubNubPoll;
+			sourceTree = "<group>";
+		};
+		797149471BF02AEA00F9FC61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				797149481BF02AEA00F9FC61 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79A78CD71BF02C4F000B3BAD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79A78CD81BF02C4F000B3BAD /* Controller */,
+				79A78CDD1BF02C4F000B3BAD /* Misc */,
+				79A78CE01BF02C4F000B3BAD /* Model */,
+				79A78CE11BF02C4F000B3BAD /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		79A78CD81BF02C4F000B3BAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79A78CD91BF02C4F000B3BAD /* SPNPApplicationDelegate.h */,
+				79A78CDA1BF02C4F000B3BAD /* SPNPApplicationDelegate.m */,
+				79A78CDB1BF02C4F000B3BAD /* SPNPMainViewController.h */,
+				79A78CDC1BF02C4F000B3BAD /* SPNPMainViewController.m */,
+				79F6BB4D1BFF2D8C000B3C5B /* SPNPPollSessionRestoreViewController.h */,
+				79F6BB4E1BFF2D8C000B3C5B /* SPNPPollSessionRestoreViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		79A78CDD1BF02C4F000B3BAD /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				79A78CDE1BF02C4F000B3BAD /* Categories */,
+				79A78CDF1BF02C4F000B3BAD /* Protocols */,
+				79F6BB421BFD33B7000B3C5B /* Helpers */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		79A78CDE1BF02C4F000B3BAD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		79A78CDF1BF02C4F000B3BAD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		79A78CE01BF02C4F000B3BAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79F6BB461BFD33E7000B3C5B /* Poll */,
+				79A78CEF1BF02CFF000B3BAD /* SPNPPollManager.h */,
+				79A78CF01BF02CFF000B3BAD /* SPNPPollManager.m */,
+				7917D7A71BFB57C400CB426B /* SPNPPollDataVerificator.h */,
+				7917D7A81BFB57C400CB426B /* SPNPPollDataVerificator.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79A78CE11BF02C4F000B3BAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79A78CE21BF02C4F000B3BAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79A78CE31BF02C4F000B3BAD /* General */,
+				79A78CE51BF02C4F000B3BAD /* Images */,
+				79A78CE71BF02C4F000B3BAD /* Interface */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		79A78CE31BF02C4F000B3BAD /* General */ = {
+			isa = PBXGroup;
+			children = (
+				79A78CE41BF02C4F000B3BAD /* Info.plist */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		79A78CE51BF02C4F000B3BAD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				79A78CE61BF02C4F000B3BAD /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		79A78CE71BF02C4F000B3BAD /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				79A78CE81BF02C4F000B3BAD /* Main.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		79F6BB421BFD33B7000B3C5B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				79F6BB431BFD33B7000B3C5B /* SPNPSerializable.h */,
+				79F6BB441BFD33B7000B3C5B /* SPNPSerializable.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		79F6BB461BFD33E7000B3C5B /* Poll */ = {
+			isa = PBXGroup;
+			children = (
+				79F6BB471BFD33E7000B3C5B /* SPNPPoll.h */,
+				79F6BB481BFD33E7000B3C5B /* SPNPPoll.m */,
+				79AB5FBA1C01304900D76A3C /* SPNPPollStatistic.h */,
+				79AB5FBB1C01304900D76A3C /* SPNPPollStatistic.m */,
+				79F6BB491BFD33E7000B3C5B /* SPNPPollResponse.h */,
+				79F6BB4A1BFD33E7000B3C5B /* SPNPPollResponse.m */,
+				79AB5FB71C00943F00D76A3C /* SPNPPollResponseStatistic.h */,
+				79AB5FB81C00943F00D76A3C /* SPNPPollResponseStatistic.m */,
+			);
+			path = Poll;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		797149401BF02AEA00F9FC61 /* SimplePubNubPollHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797149551BF02AEA00F9FC61 /* Build configuration list for PBXNativeTarget "SimplePubNubPollHost" */;
+			buildPhases = (
+				7971493D1BF02AEA00F9FC61 /* Sources */,
+				7971493E1BF02AEA00F9FC61 /* Frameworks */,
+				7971493F1BF02AEA00F9FC61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimplePubNubPollHost;
+			productName = SimplePubNubPoll;
+			productReference = 797149411BF02AEA00F9FC61 /* SimplePubNubPollHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		797149391BF02AEA00F9FC61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SPNP;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = PubNub;
+				TargetAttributes = {
+					797149401BF02AEA00F9FC61 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 7971493C1BF02AEA00F9FC61 /* Build configuration list for PBXProject "SimplePubNubPollHost" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 797149381BF02AEA00F9FC61;
+			productRefGroup = 797149421BF02AEA00F9FC61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				797149401BF02AEA00F9FC61 /* SimplePubNubPollHost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7971493F1BF02AEA00F9FC61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A78CEE1BF02C4F000B3BAD /* Main.storyboard in Resources */,
+				79A78CED1BF02C4F000B3BAD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7971493D1BF02AEA00F9FC61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7917D7A91BFB57C400CB426B /* SPNPPollDataVerificator.m in Sources */,
+				79F6BB451BFD33B7000B3C5B /* SPNPSerializable.m in Sources */,
+				79A78CEA1BF02C4F000B3BAD /* SPNPApplicationDelegate.m in Sources */,
+				79AB5FBC1C01304900D76A3C /* SPNPPollStatistic.m in Sources */,
+				79F6BB4B1BFD33E7000B3C5B /* SPNPPoll.m in Sources */,
+				79A78CEB1BF02C4F000B3BAD /* SPNPMainViewController.m in Sources */,
+				79F6BB4C1BFD33E7000B3C5B /* SPNPPollResponse.m in Sources */,
+				797149491BF02AEA00F9FC61 /* main.m in Sources */,
+				79AB5FB91C00943F00D76A3C /* SPNPPollResponseStatistic.m in Sources */,
+				79F6BB4F1BFF2D8C000B3C5B /* SPNPPollSessionRestoreViewController.m in Sources */,
+				79A78CF11BF02CFF000B3BAD /* SPNPPollManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79A78CE81BF02C4F000B3BAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79A78CE91BF02C4F000B3BAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		797149531BF02AEA00F9FC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		797149541BF02AEA00F9FC61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		797149561BF02AEA00F9FC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/SimplePubNubPoll/Resources/General/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pubnub.SimplePubNubPoll;
+				PRODUCT_NAME = SimplePubNubPollHost;
+			};
+			name = Debug;
+		};
+		797149571BF02AEA00F9FC61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/SimplePubNubPoll/Resources/General/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pubnub.SimplePubNubPoll;
+				PRODUCT_NAME = SimplePubNubPollHost;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7971493C1BF02AEA00F9FC61 /* Build configuration list for PBXProject "SimplePubNubPollHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797149531BF02AEA00F9FC61 /* Debug */,
+				797149541BF02AEA00F9FC61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		797149551BF02AEA00F9FC61 /* Build configuration list for PBXNativeTarget "SimplePubNubPollHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797149561BF02AEA00F9FC61 /* Debug */,
+				797149571BF02AEA00F9FC61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 797149391BF02AEA00F9FC61 /* Project object */;
+}

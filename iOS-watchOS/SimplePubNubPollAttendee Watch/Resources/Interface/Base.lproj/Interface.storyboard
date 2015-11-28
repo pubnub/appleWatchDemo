@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+    </dependencies>
+    <scenes>
+        <!--SPNPPollWaitingScreen-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="SPNPPollWaitingScreen" id="AgC-eL-Hgc" customClass="SPNPWaitingInterfaceController">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="Zht-gA-t3y">
+                            <items>
+                                <label width="1" alignment="left" verticalAlignment="center" textAlignment="center" numberOfLines="2" id="pha-f8-Uef">
+                                    <string key="text">Waiting for 
+poll data.</string>
+                                </label>
+                                <button width="1" alignment="left" verticalAlignment="bottom" hidden="YES" title="Show statistic" id="fAW-ts-BYr">
+                                    <connections>
+                                        <action selector="handleBackButtonTap:" destination="AgC-eL-Hgc" id="M4I-t2-8oA"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="backToPollButton" destination="fAW-ts-BYr" id="b91-h1-SLX"/>
+                        <outlet property="status" destination="pha-f8-Uef" id="c3O-Sl-g2s"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--SPNPPollStatisticsScreen-->
+        <scene sceneID="A6h-eC-IfU">
+            <objects>
+                <controller identifier="SPNPPollStatisticsScreen" spacing="0.0" id="LiP-Np-9FB" customClass="SPNPBarChartController">
+                    <items>
+                        <group width="1" height="1" alignment="left" spacing="0.0" id="4Ok-A5-Q1x" userLabel="BarChart">
+                            <items>
+                                <group width="27" height="1" alignment="left" verticalAlignment="bottom" layout="vertical" radius="0.0" id="wW3-lx-CZx" userLabel="Bar Unit">
+                                    <items>
+                                        <label width="1" height="14" alignment="center" verticalAlignment="bottom" text="120" textAlignment="center" id="x6G-K5-hKd" userLabel="Value">
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <group width="1" height="1" heightAdjustment="-14" alignment="center" verticalAlignment="bottom" id="Ctf-sb-JKh" userLabel="Bar"/>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="27" height="1" alignment="left" verticalAlignment="bottom" layout="vertical" radius="0.0" id="o6a-Lu-IQi" userLabel="Bar Unit">
+                                    <items>
+                                        <label width="1" height="14" alignment="center" verticalAlignment="bottom" text="120" textAlignment="center" id="CFB-S4-MQZ" userLabel="Value">
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <group width="1" height="1" heightAdjustment="-14" alignment="center" verticalAlignment="bottom" id="2Om-hM-IcC" userLabel="Bar"/>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="27" height="1" alignment="left" verticalAlignment="bottom" layout="vertical" radius="0.0" id="Mbd-GL-xgr" userLabel="Bar Unit">
+                                    <items>
+                                        <label width="1" height="14" alignment="center" verticalAlignment="bottom" text="120" textAlignment="center" id="ERC-eF-TRp" userLabel="Value">
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <group width="1" height="1" heightAdjustment="-14" alignment="center" verticalAlignment="bottom" id="7wC-TE-joZ" userLabel="Bar"/>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="27" height="1" alignment="left" verticalAlignment="bottom" layout="vertical" radius="0.0" id="Y4B-da-JR2" userLabel="Bar Unit">
+                                    <items>
+                                        <label width="1" height="14" alignment="center" verticalAlignment="bottom" text="120" textAlignment="center" id="b3b-tz-hSM" userLabel="Value">
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <group width="1" height="1" heightAdjustment="-14" alignment="center" verticalAlignment="bottom" id="PB8-ch-um7" userLabel="Bar"/>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="27" height="1" alignment="left" verticalAlignment="bottom" layout="vertical" radius="0.0" id="OCo-ut-BAQ" userLabel="Bar Unit">
+                                    <items>
+                                        <label width="1" height="14" alignment="center" verticalAlignment="bottom" text="120" textAlignment="center" id="5LL-jn-xFD" userLabel="Value">
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <group width="1" height="1" heightAdjustment="-14" alignment="center" verticalAlignment="bottom" id="2DI-Uz-Go0" userLabel="Bar"/>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <label width="1" alignment="left" text="Label" numberOfLines="10" id="0aA-4k-PPU">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <table alignment="left" id="sMp-sg-vSH" userLabel="Chart Legend">
+                            <items>
+                                <tableRow identifier="SPNPBarChartLegendCell" selectable="NO" id="Yxk-OJ-Z6h" customClass="SPNPBarChartLegendCell">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="KeB-1c-E1r" userLabel="Cell">
+                                        <items>
+                                            <group width="14" height="1" alignment="left" id="Po3-pM-W9t" userLabel="Color Marker Holder">
+                                                <items>
+                                                    <group width="8" height="8" alignment="center" verticalAlignment="center" radius="4" id="Npo-Ss-Cn4" userLabel="Color Marker"/>
+                                                </items>
+                                            </group>
+                                            <group width="4" height="1" alignment="left" id="W0F-hD-r4W"/>
+                                            <label width="1" widthAdjustment="-18" alignment="left" text="Label" numberOfLines="10" id="bfQ-AQ-eIF" userLabel="Legend Entry Title">
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="colorMarker" destination="Npo-Ss-Cn4" id="97C-cn-muA"/>
+                                        <outlet property="entryTitle" destination="bfQ-AQ-eIF" id="sZb-qd-rdl"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="bar1" destination="Ctf-sb-JKh" id="mVv-FC-kiK"/>
+                        <outlet property="bar2" destination="2Om-hM-IcC" id="vfE-ET-EtQ"/>
+                        <outlet property="bar3" destination="7wC-TE-joZ" id="Wdx-Bs-RcM"/>
+                        <outlet property="bar4" destination="PB8-ch-um7" id="TDY-iW-BFt"/>
+                        <outlet property="bar5" destination="2DI-Uz-Go0" id="fUd-fC-79t"/>
+                        <outlet property="barHolder1" destination="wW3-lx-CZx" id="hbG-s8-S4s"/>
+                        <outlet property="barHolder2" destination="o6a-Lu-IQi" id="dVA-M5-udM"/>
+                        <outlet property="barHolder3" destination="Mbd-GL-xgr" id="BkG-y0-eDy"/>
+                        <outlet property="barHolder4" destination="Y4B-da-JR2" id="foN-Nh-gcO"/>
+                        <outlet property="barHolder5" destination="OCo-ut-BAQ" id="aG2-90-k5j"/>
+                        <outlet property="barValue1" destination="x6G-K5-hKd" id="ayK-Ty-8bF"/>
+                        <outlet property="barValue2" destination="CFB-S4-MQZ" id="hR1-rC-17s"/>
+                        <outlet property="barValue3" destination="ERC-eF-TRp" id="r3C-3E-HHv"/>
+                        <outlet property="barValue4" destination="b3b-tz-hSM" id="Sr9-7R-VpH"/>
+                        <outlet property="barValue5" destination="5LL-jn-xFD" id="Ni3-AH-LJQ"/>
+                        <outlet property="legendTable" destination="sMp-sg-vSH" id="BKd-gY-enf"/>
+                        <outlet property="pollQuestion" destination="0aA-4k-PPU" id="JlZ-ut-fdd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="435" y="345"/>
+        </scene>
+    </scenes>
+</document>
