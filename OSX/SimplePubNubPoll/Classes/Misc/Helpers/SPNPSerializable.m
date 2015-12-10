@@ -148,7 +148,7 @@
 + (instancetype)objectFromDictionaryRepresentation:(NSDictionary *)data {
     
     id object = nil;
-    if (data && [NSStringFromClass(self.class) isEqualToString:data[@"s_class"]]) {
+    if (data && [data isKindOfClass:NSDictionary.class] && [NSStringFromClass(self.class) isEqualToString:data[@"s_class"]]) {
         
         object = [self new];
         for (NSString *propertyName in data.allKeys) {
